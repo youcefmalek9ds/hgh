@@ -1,0 +1,835 @@
+/*--------------------------------------------------------------
+# Basics
+--------------------------------------------------------------*/
+body {
+	overflow-x: hidden;
+}
+html {
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+ul {
+	list-style: none;
+}
+textarea, input, a, button { 
+	outline: none;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+h1, h2, h3, h4, h6 {
+	font-weight: 700;
+}
+a {
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+}
+a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:active, button:focus; {
+	text-decoration: none !important;
+	outline: none !important;
+}
+::selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #000;
+	color: #fff;
+	text-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+.animation-delay-100 {
+	-webkit-animation-delay: 0.1s;
+	animation-delay: 0.1s;
+}
+.animation-delay-200 {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+.animation-delay-300 {
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+.animation-delay-400 {
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+.animation-delay-600 {
+	-webkit-animation-delay: 0.6s;
+	animation-delay: 0.6s;
+}
+.animation-delay-800 {
+	-webkit-animation-delay: 0.8s;
+	animation-delay: 0.8s;
+}
+.animation-delay-1000 {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.animation-delay-2000 {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+/*--------------------------------------------------------------
+# BG
+--------------------------------------------------------------*/
+#bg {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	z-index: -20;
+	background: url('../img/main-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.overlay-pattern {
+    background: url('../img/overlay-pattern.png');
+    opacity: 0.5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+	box-shadow: inset 0 0 300px 0 #c5f6ff;
+}
+.overlay {
+    -moz-animation: overlay .5s .5s forwards;
+    -webkit-animation: overlay .5s .5s forwards;
+    -ms-animation: overlay .5s .5s forwards;
+    animation: overlay .5s .5s forwards;
+    background-attachment: fixed, fixed;
+    background-image: url(../img/overlay-pattern2.png), url(../img/overlay.svg);
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	z-index: -5;
+}
+@-moz-keyframes overlay {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
+@-webkit-keyframes overlay {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
+@-ms-keyframes overlay {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
+@keyframes overlay {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
+
+/*--------------------------------------------------------------
+# App Download
+--------------------------------------------------------------*/
+.app-download-section {
+	position: relative;
+	padding: 12% 0 80px 0;
+}
+.app-download-wrapper {
+	max-width: 700px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 110px 70px 70px 70px;
+	position: relative;
+	border-radius: 50px;
+	color: #333;
+	box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.4);
+}
+.app-icon-wrapper {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: -110px;
+}
+.app-icon-inner-wrapper {
+	background: #fff;
+	padding: 15px;
+	display: table;
+	margin: 0 auto;
+	border-radius: 40px;
+}
+.app-icon-wrapper img {
+	max-width: 180px;
+	border-radius: 30px!important;
+}
+.app-download-content {
+	text-align: center;
+}
+.app-download-content-header {
+	position: relative;
+}
+.app-download-content h1 {
+	font-weight: 300;
+	margin: 0;
+	font-size: 1.8em;
+}
+.app-download-content-header span {
+	font-weight: 700;
+	display: block;
+	font-size: 1.4em;
+}
+.app-download-status {
+	position: relative;
+	margin: 30px 0;
+}
+.app-download-status:after {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 100%;
+	background: #eee;
+	left: 0;
+	top: 47%;
+	position: absolute;
+}
+.status-row {
+	background: #eee;
+	display: inline-block;
+	max-width: 150px;
+	padding: 10px 15px;
+	margin: 0 5px;
+	position: relative;
+	z-index: 5;
+	border-radius: 8px;
+}
+.status-label {
+	font-size: 0.9em;
+	font-weight: 300;
+	text-transform: uppercase;
+	display: block;
+	line-height: 1;
+	margin: 0 0 5px 0;
+}
+.status-dynamic {
+	font-size: 1em;
+	font-weight: 700;
+	display: block;
+	line-height: 1;
+}
+#status {
+	color: #4fe16b;
+}
+.app-download-main p.app-download-intro-text {
+	font-size: 1.4em;
+	color: #999;
+	font-weight: 300;
+	max-width: 89%;
+	margin: 0 auto;
+}
+.platform-field-wrapper {
+	position: relative;
+}
+.platform-item {
+	background: #eee;
+	border-radius: 10px;
+	padding: 20px 10px;
+    position: relative;
+	text-align: center;
+	-webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    cursor: pointer;	
+}
+.platform-item i {
+	font-size: 2.8em;
+	display: block;
+	color: #222;
+}
+.platform-item span {
+	color: #222;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.1em;
+	margin-top: 4px;
+	display: block;
+}
+.platform-item.active {
+	background: #8400ff;
+}
+.platform-item.active i {
+	color: #fff;
+}
+.platform-item.active span {
+	color: #fff;
+	text-shadow: none;
+}
+
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+.master-modal {
+	max-width: 450px;
+	margin: 0 auto;
+	position: relative;
+	color: #333;
+	border-radius: 30px;
+}
+.generator-header {
+	text-align: center;
+	background: #8400ff;
+	color: #fff;
+	font-size: 1.8em;
+	-webkit-border-top-left-radius: 30px;
+	-webkit-border-top-right-radius: 30px;
+	-moz-border-radius-topleft: 30px;
+	-moz-border-radius-topright: 30px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+.generator-header span.lnr {
+	margin-right: 10px;
+	display: inline-block;
+	position: relative;
+	top: 2px;
+}
+.generator-header {
+	padding: 25px 20px;
+}
+.generator-content {
+	padding: 25px 35px;
+}
+.generator-content {
+	background: #fff;
+	-webkit-border-bottom-right-radius: 30px;
+	-webkit-border-bottom-left-radius: 30px;
+	-moz-border-radius-bottomright: 30px;
+	-moz-border-radius-bottomleft: 30px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	text-align: center;
+}
+.console-msg-wrapper {
+	position: relative;
+	margin: 25px 0 0 0;
+	height: 100px;
+}
+.console-msg {
+	font-size: 2em;
+	font-weight: 700;
+}
+.console-loadbar {
+	width: 90%;
+	max-width: 640px;
+	padding: 10px 15px;
+	display: table;
+	margin: 30px auto 0 auto;
+	background: #eee;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	transition: all 0.2s ease-in-out 0s;
+	border-radius: 10px;
+}
+.console-loadbar div {
+	font-size: 20px;
+	text-indent: 9999px;
+	overflow: hidden;
+	background: #4fe16b;
+	border-radius: 10px;
+}
+.console-msg-error {
+	color: #fc4349;
+}
+
+/*--------------------------------------------------------------
+# Verification
+--------------------------------------------------------------*/
+.human-verification-wrapper {
+	position: relative;
+}
+.human-verification-wrapper p {
+	color: #000;
+	font-size: 1.2em;
+	margin: 0 auto;
+	display: table;
+}
+.human-verification-wrapper i {
+	font-size: 2.6em;
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+	color: #8400ff;
+}
+#verification-button {
+	color: #fff;
+}
+.h-v-time-left-wrapper {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 1em;
+	margin-bottom: 15px;
+}
+#human_verification_timer_time {
+	color: #333;
+	display: block;
+	font-weight: 700;
+	line-height: 1;
+}
+.verification-app-wrapper h3 {
+	color: #000;
+	margin: 10px 0 20px 0;
+	font-size: 1.2em;
+	font-weight: 300;
+}
+.verification-app-wrapper h3 span {
+	display: block;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+.verification-app-icon-img {
+	max-width: 70px;
+	margin: 0 auto;
+	display: table;
+}
+/*--------------------------------------------------------------
+# Button
+--------------------------------------------------------------*/
+.button-wrapper {
+	margin: 30px auto 0 auto;
+}
+.button {
+	background: #8400ff;
+	display: table;
+	margin: 0 auto;
+	padding: 25px 35px 25px 55px;
+	color: #fff;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+	text-decoration: none !important;
+	border: 2px solid #eee;
+	position: relative;
+	cursor: pointer;
+	font-size: 1.4em;
+}
+.button:hover {
+	background: #8400ff;
+	color: #fff;
+}
+.button span.lnr {
+	position: absolute;
+	left: 17px;
+	top: 27px;
+	font-size: 1.2em;
+	color: #fff;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+	-moz-transition: all 0.2s ease-in-out 0s;
+	-ms-transition: all 0.2s ease-in-out 0s;
+	-o-transition: all 0.2s ease-in-out 0s;
+	font-weight: 400;
+	text-shadow: none;
+	transition: all 0.2s ease-in-out 0s;
+}
+.button:hover span.lnr {
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+	margin-top: 320px;
+	text-align: center;
+	padding: 5px 0;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 1em;
+	position: relative;
+	z-index: 10;
+}
+
+/*--------------------------------------------------------------
+# Loader
+--------------------------------------------------------------*/
+.loader {
+  color: #8400ff;
+  font-size: 70px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 45px auto;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+@-webkit-keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.modal-load {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	pointer-events: auto;
+	background-clip: padding-box;
+	outline: 0;
+	padding: 10px;
+	background-color: rgba(255, 255, 255, 0.95);
+	color: #000;
+	text-align: center;
+	margin: 0 auto;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+@media screen and (max-width: 720px) {
+	.modal-load {
+		width: 60%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.modal-load {
+		width: 60%;
+	}
+}
+.modal-load p {
+	margin: 0;
+	padding: 5px 0;
+	font-size: 15px;
+}
+.modal-load p:first-child {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #FFF;
+    background-clip: padding-box;
+    outline: 0;
+    text-align: center;
+}
+
+.modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 7px 15px 0 15px;
+    background-color: #8400ff;
+}
+
+.progress-bar {
+    background-color: #8400ff !important;
+}
+
+.phone {
+    background: url(../img/phone.png) no-repeat;
+    width: 210px;
+    height: 183px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.icon-modal {
+    margin-top: 43px;
+    margin-left: 14px;
+    width: 50px;
+    text-align: center;
+}
+
+.avatar-modal img {
+    width: 33px;
+    height: 33px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    border-radius: 25%;
+    border-radius: 20%;
+}
+
+.name-modal {
+    margin-top: 2px;
+    color: #fff;
+    font-size: 8px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.modal-body h1 {
+	color: #000;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.modal-body p {
+	color: #000;
+    font-size: 13px;
+}
+
+.modal-btn {
+    padding-bottom: 30%;
+}
+
+.modal-btn a {
+	cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    background-color: #8400ff;
+    padding: 15px 0;
+    width: 95%;
+    font-size: 16px;
+    margin-top: 30px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.close {
+    float: left;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
+    cursor: pointer;
+}
+
+.modal-header .close {
+    padding: 0;
+    margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Responsive Design
+--------------------------------------------------------------*/
+@media screen and (max-width: 1920px) {
+	.header-content h1 {
+		font-size: 7em;
+	}
+	.header-content p {
+		font-size: 1.6em;
+	}
+	.container {
+		max-width: 800px;
+	}
+	.button {
+		padding: 15px 25px 15px 45px;
+		letter-spacing: 1px;
+	}
+	.button span.lnr {
+		top: 15px;
+	}
+}
+@media screen and (max-width: 1260px) {
+	.app-download-section {
+		padding: 200px 0 80px 0;
+	}
+}
+@media screen and (max-width: 550px) {
+	.app-download-wrapper {
+		padding: 80px 30px 70px 30px;
+	}
+	.app-icon-wrapper {
+		top: -75px;
+	}
+	.app-icon-wrapper img {
+		max-width: 120px;
+	}
+	.button {
+		padding: 12px 15px 10px 45px;
+		letter-spacing: 0;
+	}
+	.button span.lnr {
+		font-size: 1em;
+		left: 12px;
+	}
+}
+@media screen and (max-width: 460px) {
+	.app-download-section {
+		padding: 120px 0 80px 0;
+	}
+	.app-download-content h1 {
+		font-size: 1.5em;
+	}
+	.row-second {
+		display: none;
+	}
+	.app-download-main p.app-download-intro-text {
+		font-size: 1.2em;
+		max-width: 100%;
+	}
+	.button {
+		font-size: 1.2em;
+	}
+	.console-msg {
+		font-size: 1.8em;
+	}
+}
+@media screen and (max-width: 390px) {
+	.app-download-content h1 {
+		font-size: 1.3em;
+	}
+	.app-download-main p.app-download-intro-text {
+		font-size: 1.1em;
+	}
+	.console-msg {
+		font-size: 1.6em;
+	}
+}
+@media screen and (max-width: 365px) {
+	.app-download-content h1 {
+		font-size: 1.2em;
+	}
+	.app-download-main p.app-download-intro-text {
+		font-size: 1em;
+	}
+	.button {
+		font-size: 1.1em;
+	}
+	.console-msg {
+		font-size: 1.5em;
+	}
+}
+@media screen and (max-width: 340px) {
+	.app-download-content h1 {
+		font-size: 1.1em;
+	}
+	.button {
+		font-size: 1em;
+	}
+	.app-download-wrapper {
+		padding: 80px 20px 70px 20px;
+	}
+	.console-msg {
+		font-size: 1.4em;
+	}
+	.generator-header {
+		font-size: 1.6em;
+	}
+	.human-verification-wrapper p {
+		font-size: 1em;
+	}
+}
