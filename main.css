@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|PT+Sans:400,700');
+
+body {
+    background: url(bg.jpg) center/cover no-repeat fixed;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow-y : auto;
+}
+
+.logo {
+    max-height: 20vh;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hack {
+    background: #000000;
+    background: -webkit-linear-gradient(to bottom, #ffafbd, #ffc3a0);
+    background: linear-gradient(to bottom, #000428, #004e92);
+    color: #ffffff;
+    border-radius: 0.5rem;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+    font-family: 'PT Sans', sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.status-header {
+    font-size: 1.1rem !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    background-color: #fff;
+    color: #434343 !important;
+    margin: 0 -14px 0.5rem -15px !important;
+    border-bottom: 2px solid #434343;
+    border-left: 2px solid rgba(67, 67, 67, 0.5);
+    border-right: 2px solid rgba(67, 67, 67, 0.5);
+}
+
+.hack-header {
+    margin: 0 -14px 0 -15px !important;
+    padding-top: 0.25rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-left: 2px solid rgba(67, 67, 67, 0.5);
+    border-top: 2px solid rgba(67, 67, 67, 0.5);
+    border-right: 2px solid rgba(67, 67, 67, 0.5);
+    border-bottom: 1px solid rgba(67, 67, 67, 0.5);
+    background-color: #ffffff;
+    color: #434343;
+}
+
+.hack-generator {
+    font-size: 1.3rem !important;
+    color: #fff;
+    font-weight: 400 !important;
+}
+
+.recent-header {
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+    text-transform: none !important;
+    font-size: 1.25rem !important;
+}
+
+/*.status-header {
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+    text-transform: none !important;
+    font-size: 1.1rem !important;
+    font-weight: 400 !important;
+}*/
+
+.recent {
+    background-color: #ffffff;
+    color: #434343;
+    opacity: 0.9;
+    border-radius: 0.5rem;
+    border: 2px solid rgba(67, 67, 67, 0.75);
+    display: none;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    margin-top: -0.5rem !important;
+}
+
+.form-control {
+    text-align: center !important;
+    font-weight: 700 !important;
+}
+
+p {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.end, .ehh, .h-v {
+    display: none;
+}
+
+.fab, .fas {
+    cursor: pointer;
+    font-size: 3.6rem !important;
+    opacity: 0.8;
+    margin-bottom: 0.5rem !important;
+    transition-duration: 0.5s;
+}
+
+.f-username {
+    font-size: 1.7rem !important;
+    margin-top: -0.5rem !important;
+    text-transform: none !important;
+}
+
+.i-gems {
+    background-image: url(gems-240.png);
+}
+
+.i-gold {
+    background-image: url(gold-240.png);
+}
+
+.i-gems, .i-gold {
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'PT Sans', sans-serif !important;
+    font-weight: 700;
+    background-color: #434343 !important;
+    border: 0;
+    color: white !important;
+    text-align: left !important;
+    padding-left: 3.5rem !important;
+}
+
+.final-img {
+    max-width: 75%;
+}
+
+.p-m {
+    cursor: pointer;
+    border: 0;
+    color: #000 !important;
+    background-color: #fff !important;
+    font-weight: 700 !important;
+    font-size: 1.8rem !important;
+    padding: 0 1rem !important;
+}
+
+h3 {
+    font-size: 1.4rem !important;
+}
+
+.btn-c {
+    font-weight: 700 !important;
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.status-img {
+    margin-bottom: 3px;
+    max-height: 20px;
+}
+
+red {
+    font-size: 1.4rem !important;
+    color: red !important;
+}
+
+.typed-cursor {
+    display: none !important;
+}
+
+.btn-l {
+    margin-bottom: 0.5rem !important;
+}
+
+@media (min-width: 576px) {
+    h4 {
+        font-size: 1.65rem !important;
+    }
+    .status-header {
+        font-size: 1.25rem !important;
+    }
+    .recent-header {
+        font-size: 1.35rem !important;
+    }
+    p {
+        font-size: 1.15rem !important;
+    }
+    .fab, .fas {
+        font-size: 4rem !important;
+    }
+    .btn-c {
+        font-size: 1.75rem !important;
+    }
+    .#username {
+        font-size: 1.15rem !important;
+    }
+    .f-username {
+        font-size: 1.9rem !important;
+    }
+    .hack-generator {
+        font-size: 1.4rem !important;
+    }
+    .final-img {
+        max-width: 50%;
+    }
+}
+#success{
+  background:#03a679;
+  color:#f0f0f0;  
+}
+
+#failure{
+  background:#ff3939;
+  color:#f0f0f0;  
+}
+
+.notify{  
+  position:absolute;
+  top:0px;
+  width:100%;
+  height:0;  
+  box-sizing:border-box;
+  color:white;  
+  text-align:center;
+  background:#ff4d4d;
+  box-sizing:border-box;
+  transition:height .2s;
+}
+
+#notifyType:before{
+  display:block;
+  margin-top:15px; 
+  
+}
+
+.active{  
+  height:50px;
+}
+
+.success:before{
+  Content:"Aww Yeaaaaa! Success!";
+}
+
+.failure:before{
+  Content:"Type your Username ";
+}
+
+
+@media (min-width: 768px) {
+    .btn-c {
+        margin-bottom: 0.5rem;
+        font-size: 1.85rem !important;
+    }
+    h4 {
+        font-size: 1.8rem !important;
+    }
+    .status-header {
+        font-size: 1.35rem !important;
+    }
+    .recent-header {
+        font-size: 1.45rem !important;
+    }
+    .fab, .fas {
+        font-size: 4.20rem !important;
+    }
+    #username {
+        font-size: 1.3rem !important;
+    }
+    p {
+        font-size: 1.25rem !important;
+    }
+    .hack-generator {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .fab, .fas {
+        font-size: 5rem !important;
+    }
+}

@@ -1,3 +1,10 @@
+/**************************
+
+Website Designed by CounterMind on Marketing-Rhino.com
+https://www.marketing-rhino.com/
+It is forbidden to re-sell this landing page without Author Permission.
+
+**************************/
 /*--------------------------------------------------------------
 # Basics
 --------------------------------------------------------------*/
@@ -33,7 +40,7 @@ a {
 	-o-transition: all 0.2s ease-in-out 0s;
 	transition: all 0.2s ease-in-out 0s;
 }
-a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:active, button:focus; {
+a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:active, button:focus {
 	text-decoration: none !important;
 	outline: none !important;
 }
@@ -94,7 +101,7 @@ a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:acti
 	min-width: 100%; 
 	min-height: 100%;
 	z-index: -20;
-	background: url('../img/main-bg.jpg');
+	background: url('../img/main-bg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -116,7 +123,7 @@ a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:acti
     -ms-animation: overlay .5s .5s forwards;
     animation: overlay .5s .5s forwards;
     background-attachment: fixed, fixed;
-    background-image: url(../img/overlay-pattern2.png), url(../img/overlay.svg);
+    background-image: url(../img/overlay-pattern2.png), url(../img/overlay.html);
     background-position: top left, center center;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -244,7 +251,7 @@ a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:acti
 	margin: 0 0 5px 0;
 }
 .status-dynamic {
-	font-size: 1em;
+	font-size: 0.8em;
 	font-weight: 700;
 	display: block;
 	line-height: 1;
@@ -261,6 +268,74 @@ a:hover, a:visited, a:focus, a:active, button:hover, button:visited, button:acti
 }
 .platform-field-wrapper {
 	position: relative;
+}
+.platform-item1 {
+	background: #eee;
+	border-radius: 10px;
+	padding: 20px 10px;
+    position: relative;
+	text-align: center;
+	-webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+	cursor: pointer;
+	margin-bottom: 10px	
+}
+.platform-item1 i {
+	font-size: 2.8em;
+	display: block;
+	color: #222;
+}
+.platform-item1 span {
+	color: #222;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.1em;
+	margin-top: 4px;
+	display: block;
+}
+.platform-item1.active1 {
+	background: #00A7DD;
+}
+.platform-item1.active1 i {
+	color: #fff;
+}
+.platform-item1.active1 span {
+	color: #fff;
+	text-shadow: none;
+}
+.platform-item2 {
+	background: #eee;
+	border-radius: 10px;
+	padding: 20px 10px;
+    position: relative;
+	text-align: center;
+	-webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+	cursor: pointer;
+	margin-bottom: 10px	
+}
+.platform-item2 i {
+	font-size: 2.8em;
+	display: block;
+	color: #222;
+}
+.platform-item2 span {
+	color: #222;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.1em;
+	margin-top: 4px;
+	display: block;
+}
+.platform-item2.active2 {
+	background: #BB0006;
+}
+.platform-item2.active2 i {
+	color: #fff;
+}
+.platform-item2.active2 span {
+	color: #fff;
+	text-shadow: none;
 }
 .platform-item {
 	background: #eee;
@@ -565,162 +640,6 @@ footer {
   }
 }
 
-.modal-load {
-	position: relative;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	width: 100%;
-	pointer-events: auto;
-	background-clip: padding-box;
-	outline: 0;
-	padding: 10px;
-	background-color: rgba(255, 255, 255, 0.95);
-	color: #000;
-	text-align: center;
-	margin: 0 auto;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-}
-@media screen and (max-width: 720px) {
-	.modal-load {
-		width: 60%;
-	}
-}
-@media (min-width: 768px) and (max-width: 991px) {
-	.modal-load {
-		width: 60%;
-	}
-}
-.modal-load p {
-	margin: 0;
-	padding: 5px 0;
-	font-size: 15px;
-}
-.modal-load p:first-child {
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.modal-content {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-    pointer-events: auto;
-    background-color: #FFF;
-    background-clip: padding-box;
-    outline: 0;
-    text-align: center;
-}
-
-.modal-header {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 7px 15px 0 15px;
-    background-color: #8400ff;
-}
-
-.progress-bar {
-    background-color: #8400ff !important;
-}
-
-.phone {
-    background: url(../img/phone.png) no-repeat;
-    width: 210px;
-    height: 183px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
-}
-
-.icon-modal {
-    margin-top: 43px;
-    margin-left: 14px;
-    width: 50px;
-    text-align: center;
-}
-
-.avatar-modal img {
-    width: 33px;
-    height: 33px;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
-    border-radius: 25%;
-    border-radius: 20%;
-}
-
-.name-modal {
-    margin-top: 2px;
-    color: #fff;
-    font-size: 8px;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.modal-body h1 {
-	color: #000;
-    font-size: 26px;
-    font-weight: 600;
-    padding: 15px 0;
-}
-
-.modal-body p {
-	color: #000;
-    font-size: 13px;
-}
-
-.modal-btn {
-    padding-bottom: 30%;
-}
-
-.modal-btn a {
-	cursor: pointer;
-    display: inline-block;
-    color: #fff;
-    background-color: #8400ff;
-    padding: 15px 0;
-    width: 95%;
-    font-size: 16px;
-    margin-top: 30px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-}
-
-.close {
-    float: left;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #fff;
-}
-
-button.close {
-    padding: 0;
-    background-color: transparent;
-    border: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
-    cursor: pointer;
-}
-
-.modal-header .close {
-    padding: 0;
-    margin: 0;
-}
 
 /*--------------------------------------------------------------
 # Responsive Design
@@ -748,7 +667,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 		padding: 200px 0 80px 0;
 	}
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 580px) {
 	.app-download-wrapper {
 		padding: 80px 30px 70px 30px;
 	}
@@ -765,6 +684,10 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 	.button span.lnr {
 		font-size: 1em;
 		left: 12px;
+	}
+	.platform-item1 img{
+		width: 100px;
+		height: auto;
 	}
 }
 @media screen and (max-width: 460px) {
@@ -787,6 +710,10 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 	.console-msg {
 		font-size: 1.8em;
 	}
+	.platform-item1 img{
+		width: 86px;
+		height: auto;
+	}
 }
 @media screen and (max-width: 390px) {
 	.app-download-content h1 {
@@ -797,6 +724,10 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 	}
 	.console-msg {
 		font-size: 1.6em;
+	}
+	.platform-item1 img{
+		width: 86px;
+		height: auto;
 	}
 }
 @media screen and (max-width: 365px) {
@@ -812,8 +743,12 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 	.console-msg {
 		font-size: 1.5em;
 	}
+	.platform-item1 img{
+		width: 75px;
+		height: auto;
+	}
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 320px) {
 	.app-download-content h1 {
 		font-size: 1.1em;
 	}
@@ -833,3 +768,10 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 		font-size: 1em;
 	}
 }
+/**************************
+
+Website Designed by CounterMind on Marketing-Rhino.com
+https://www.marketing-rhino.com/
+It is forbidden to re-sell this landing page without Author Permission.
+
+**************************/
